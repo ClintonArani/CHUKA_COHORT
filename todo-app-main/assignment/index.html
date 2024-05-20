@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="todo" id="todo">
+            <h1>TODO</h1>
+            <img class="sun" id="toggleIcon" src="./images/icon-sun.svg" alt="">
+        </div>
+        <div class="radiocheck-container">
+            <div class="top" id="top">
+                <svg class="check"id="check1" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+                <p id="para1" class="para">Currently typing</p>
+                <svg class="closs" id="cross1" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+            </div>
+            <div class="bottom" id="bottom">
+                <span>
+                    <svg class="check"id="check2"   xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+                    <p id="para2" class="para" >Completed online javascript course</p>
+                    <svg class="closs" id="cross" style="margin-left: 9rem;" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+                </span>
+
+                <span>
+                    <svg class="check" id="check3" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+                    <p id="para3" class="para">Jog around the park 3x</p>
+                    <svg class="closs" style="margin-left: 14rem;" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+                </span>
+
+                <span>
+                    <svg class="check" id="check4" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+                    <p id="para4" class="para">10 minutes meditation</p>
+                    <svg class="closs" style="margin-left: 14.3rem;" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+                </span>
+                
+                <span>
+                    <svg class="check"id="check5" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+                    <p id="para5" class="para">Read for 1 hour</p>
+                    <svg class="closs" style="margin-left: 17rem;" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+                </span>
+                
+                <span>
+                    <svg class="check" id="check6" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+                    <p id="para6" class="para">Pick up groceries</p>
+                    <svg class="closs" style="margin-left: 16.6rem;" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+                </span>
+                
+                <span>
+                    <svg class="check" id="check7" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+                    <p id="para7" class="para">complete Todo App on Frontend Mentor</p>
+                    <svg class="closs" style="margin-left: 7.6rem;" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
+                </span>
+                
+                <div class="down-bar">
+                    <p class="items-left">5 items left</p>
+                    <ul>
+                        <li><a class="all" href="#">All</a></li>
+                        <li><a style="color: gray;" href="#">Active</a></li>
+                        <li><a style="color: gray;" href="#">Completed</a></li>
+                    </ul>
+                    <p class="clear" id="clear">Clear Completed</p>
+                </div>
+            </div>
+            
+        </div>
+        <p id="lastpara" style="color: gray; margin-top: 1rem; text-align: center; margin-top: 20px;">Drag and drop to reorder the list</p> 
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

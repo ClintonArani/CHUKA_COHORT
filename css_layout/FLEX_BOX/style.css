@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.item-container{
+    display: flex;
+    background-color: azure;
+    width: 70vw;
+
+}
+.yellow, .green, .blue{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 170px;
+}
+.yellow{
+    background-color: rgb(187, 187, 10);
+}
+.blue{
+    background-color: rgb(31, 31, 104);
+}
+.green{
+    background-color: rgb(11, 62, 11);
+}
+button{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #ff7200;
+
+}
+img{
+    margin-left: 40px;
+    margin-top: 10px
+    bac
+}

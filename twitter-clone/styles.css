@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+.main-container{
+    width: 100%;
+    padding: 0.5rem;
+}
+/*========== HEAD SECTION ==========*/
+.head-section{
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+}
+.head-section > .top-bar{
+    background-color: #6666ef;
+    border-top-left-radius: 8px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-bar > p{
+    margin-left: 15vw;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.top-bar > .search-box{
+    margin-right: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.search-box > label{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    text-transform: capitalize;
+}
+.search-box > select{
+    width: 25vw;
+    height: 7vh;
+    border: none;
+    border-radius: 0.3rem;
+}
+.search-box > select:focus{
+    outline: none;
+}
+.head-section > .bottom-bar{
+    width: 100%;
+    height: 35vh;
+    background-image: url("./images/twitter-clone-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*========== BODY SECTION ==========*/
+.profile-area{
+    padding-left: 2rem;
+    background-color: #f0f0f0;
+    width: 97%;
+    padding-bottom: 1rem;
+}
+.profile-pic{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-top: -5rem;
+}
+
+.container {
+    width: 98%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-left: 1px solid #f0f0f0;
+
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 99%;
+}
+
+.posts-section {
+    flex: 2;
+    
+}
+
+.comments-section {
+    flex: 2;
+    background: #fff;
+    
+    border-radius: 10px;
+}
+
+.post, .comment {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.post-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.comment-body {
+    font-size: 16px;
+}
+
+button {
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d8bda;
+}
+
+.profile-image {
+    width: 5.5rem;
+    height: 7.5rem;
+    border-radius: 5px;
+}
+
+/*========== ICONS GOES HERE*/
+.locationIcon{
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+.userIcons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+.icon-on-comment{
+    margin-bottom: 1rem;
+}
+
+.checkIcon{
+    color: #FFF;
+    background-color: #0d8bda;
+    border-radius: 50%;
+    font-size: medium;
+    padding: 5px;
+    border: 1px #1da1f2 solid;
+}
+.twitter-Icon{
+    background-color: #0d8bda;
+    padding: 5px;
+    color: #fff;
+}
+.otherIcons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.otherIcons > .otherIcon{
+    display: flex;
+    font-size: large;
+    
+}
+.heart-outline{
+    color: red;
+}
+.location{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* For screens smaller than 768px (e.g., tablets and mobile phones) */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .head-section {
+        width: 100%;
+    }
+    .head-section > .top-bar {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .top-bar > p {
+        margin: 1rem 0;
+    }
+    .top-bar > .search-box {
+        margin: 1rem 0;
+    }
+    .search-box > select {
+        width: 100%;
+    }
+    .bottom-bar {
+        height: 25vh; /* Adjust height as needed */
+    }
+    .profile-area {
+        padding: 1rem;
+    }
+    .profile-pic {
+        margin-top: -4rem;
+    }
+    main {
+        flex-direction: column;
+    }
+    .posts-section, .comments-section {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+/* For screens smaller than 480px (e.g., small mobile phones) */
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 7rem;
+        height: 7rem;
+    }
+    .profile-area {
+        padding: 0.5rem;
+    }
+    .post, .comment {
+        padding: 10px;
+    }
+    .post-title {
+        font-size: 16px;
+    }
+    .comment-body {
+        font-size: 14px;
+    }
+    .profile-image {
+        width: 4rem;
+        height: 5rem;
+    }
+}

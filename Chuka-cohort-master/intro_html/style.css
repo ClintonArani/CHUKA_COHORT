@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+div{
+    color: red;
+}
+
+h1{
+    color:blue;
+    padding-bottom: 50px;
+}
+
+div h3{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+div > div{
+    color: green;
+}
+
+.class1{
+    background-color: aquamarine;
+    padding: 5px 10px
+}
+
+#id1{
+    font-size: 30px;
+    padding: 20px;
+    background-color: brown;
+}
+
+input[type="text"]{
+    padding: 5px ;
+    background: rgb(15, 128, 0);
+    border: rgb(19, 45, 211) 5px solid;
+}
+
+h5, h6{
+    font-size: 20px;
+    color: rgb(0, 0, 255);
+
+}
+
+.form1{
+    border: 10px dashed red;
+    border-top: 30px solid yellow;
+    outline: 5px green solid;
+    padding: 20px 40px 50px 30px;
+    margin:20px;
+}
+
+.fruits{
+    list-style-type:square;
+    padding:20px
+}
+
+.btn{
+    padding: 5px;
+    border: none;
+    background: skyblue;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(50, 185, 238);
+}
+/* p{ */
+    /* padding: 20px;  */
+    /* background:lightgray; */
+/* } */

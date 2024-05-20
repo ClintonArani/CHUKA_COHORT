@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(203, 203, 203);
+}
+
+.gridcontainer{
+    width:75vw;
+    /* height: 75vh; */
+    display: grid;
+    
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        'p p g w'
+        'w2 b b w';
+}
+
+.purple, .gray, .white, .white2, .black{
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.purple{
+    background-color: purple;
+    grid-area: p;
+}
+
+.gray{
+    background-color: gray;
+    grid-area: g;
+}
+
+.white{
+    background-color: white;  
+    grid-area: w;
+    /* box-shadow: gray 1px 1px 1px 1px; */
+}
+
+.white2{
+    background-color: white;
+    grid-area: w2;
+    /* box-shadow: gray 1px 1px 1px 1px; */
+}
+
+.black{
+    background-color: rgb(1, 1, 55);
+    grid-area: b;
+}
+.profile{
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+}
+
+.profile h2{
+    font-size: 18px;
+}
+
+.profile p{
+    font-size: 16px;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.heading{
+    font: bold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.white .heading, .white2 .heading{
+    color:black
+}
+
+.paragraph{
+    color: lightgray;
+    font-size:12px;
+}
+
+@media screen and (max-width:1150px) {
+
+    .main{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        align-items: center;
+        background-color: rgb(203, 203, 203);
+    }
+    .gridcontainer{
+        width:100vw;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gridcontainer > div{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .main{
+        width: 100vw;
+    }
+    .gridcontainer{
+        width: 90%;
+    }
+    .gridcontainer > div{
+        width: 650px;
+    }
+}

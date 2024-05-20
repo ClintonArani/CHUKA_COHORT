@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.main{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemscontainer{
+    width:75vw;
+    height: 60vh;
+    display: flex;
+    border-radius: 10px;
+    color: white;
+}
+
+.yellow, .blue, .green{
+    background-color: rgb(245, 166, 6);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: space-around;
+}
+
+.yellow{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.blue{
+    background-color: rgb(21, 104, 128);
+}
+
+.green{
+    background-color: rgb(5, 71, 31);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    color:rgb(245, 166, 6);
+    border: none;
+    background: white;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+@media screen and (max-width:900px) {
+    .itemscontainer{
+        width:90vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 10px;
+        color: white;
+        gap: 20px;
+    }
+
+    .itemscontainer > div{
+        border-radius: 10px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:825px) {
+    .itemscontainer > div{
+        border-radius: 10px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:350px) {
+   
+
+    .itemscontainer{
+        width:90vw;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        color: white;
+        gap: 20px;
+    }
+
+    .itemscontainer > div{
+        border-radius: 10px;
+        width: 75vw;
+    }
+}
