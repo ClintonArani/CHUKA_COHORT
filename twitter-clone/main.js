@@ -105,7 +105,7 @@ function fetchComments(postId) {
                 commentDiv.innerHTML = `
                     <img src="${commentProfileImage}" class="profile-image" alt="Profile Image">
                     <div>
-                        <div class="userIcons icon-on-comment"><p class="postTitle">sdyuvrisdof</p><ion-icon class="checkIcon" name="checkmark-outline"></ion-icon><ion-icon class="twitter-Icon" name="logo-twitter"></ion-icon></div>
+                        <div class="userIcons icon-on-comment"><p class="postTitle">${comment.name}</p><ion-icon class="checkIcon" name="checkmark-outline"></ion-icon><ion-icon class="twitter-Icon" name="logo-twitter"></ion-icon></div>
                         <div class="comment-body">${comment.body}</div>
                         <div class="otherIcons">
                             <p class="otherIcon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon> <span>0</span></p>
